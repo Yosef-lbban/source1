@@ -1,10 +1,15 @@
 ══•═════•═══
-  ☆:↫كود تنصيب لاول مره مع مكاتب
+
+☆:↫كود تنصيب لاول مره مع مكاتب
 ☆:↫انسخ الكود الاتي ↓
+
 git clone https://github.com/Yosef-lbban/source && cd source && chmod +x install.sh && ./install.sh
+
 ══•═════•═══
+
 ☆:↫كود التنصيب السريع دون مكاتب
 ☆:↫ انسخ الكود الاتي ↓
+
 git clone https://github.com/Yosef-lbban/source&& cd source && chmod +x Fastinstall.sh &&chmod +x install.sh && ./Fastinstall.sh
 
 ══•═════•═══
@@ -13,6 +18,7 @@ git clone https://github.com/Yosef-lbban/source&& cd source && chmod +x Fastinst
 2⇠ ايدي المطور الاساسي واضغط انتر
 3⇠ معرف المطور الاساسي واضغط انتر
 ══•═════•═══
+
 ☆:↫ كود حذف التنصيب
 
 rm -rf source
