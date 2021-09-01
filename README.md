@@ -44,4 +44,4 @@ cd source;rm -rf Info.lua;./YS
 
 ══•═════•═══
 
-✟ 𝙏𝙒𝙎.@Yousef_Labban
+✟ 𝙏𝙒𝙎.https://t.me/Yousef_Labban
