@@ -34,13 +34,13 @@ rm -rf source
 
 ☆:↫ كود الرن
 
-./source/YS
+./source/
 
 ══•═════•═══
 
 ☆:↫كود تغير المطور الاساسي 
 
-cd source;rm -rf Info.lua;./YS 
+cd source;rm -rf Info.lua;./
 
 ══•═════•═══
 
