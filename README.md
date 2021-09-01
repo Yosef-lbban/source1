@@ -1,6 +1,7 @@
 ══•═════•═══
 
 ☆:↫كود تنصيب لاول مره مع مكاتب
+
 ☆:↫انسخ الكود الاتي ↓
 
 git clone https://github.com/Yosef-lbban/source && cd source && chmod +x install.sh && ./install.sh
@@ -8,6 +9,7 @@ git clone https://github.com/Yosef-lbban/source && cd source && chmod +x install
 ══•═════•═══
 
 ☆:↫كود التنصيب السريع دون مكاتب
+
 ☆:↫ انسخ الكود الاتي ↓
 
 git clone https://github.com/Yosef-lbban/source&& cd source && chmod +x Fastinstall.sh &&chmod +x install.sh && ./Fastinstall.sh
@@ -31,4 +33,5 @@ rm -rf source
 
 cd source;rm -rf Info.lua;./YS 
 ══•═════•═══
+
 ✟ 𝙏𝙒𝙎.@Yousef_Labban
