@@ -7952,7 +7952,7 @@ end
 Text = [[
 *⦑ برمجيات يوسف ⦒*
 
- *. source Yosef-lbban *
+ *. source Yousef-labban *
 *••┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉••*
  . [Source Channel .](https://t.me/yousef_labban1)
 
