@@ -5987,7 +5987,7 @@ return false
 end
 Namebot = (database:get(bot_id.."source:Name:Bot") or "كيان")
 local namebot = {
-"حياتي اني "..Namebot.. " قول ",
+"قلبي أنا "..Namebot.. " قول ",
 "قول حبيبي ؟ اني "..Namebot,
 'ها حبي وياك حبيبي 🙂💙',
 'ها ياحلوو 😙❤️',
@@ -7950,7 +7950,7 @@ end
 return false
 end
 Text = [[
-*⦑ Welcome To MY Source ⦒*
+*⦑ برمجيات يوسف ⦒*
 
  *. source Yosef-lbban *
 *••┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉••*
