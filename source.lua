@@ -4960,7 +4960,7 @@ database:del(bot_id.."source:Coomds"..msg.chat_id_)
 end
 send(msg.chat_id_, msg.id_,"• 🇸🇦 تم مـسح الصلاحيات")
 end
-if text and text:match("^اضف صلاحيه (.*)$") and Addictive(msg) then 
+if text and text:match("^اضف صلاحية (.*)$") and Addictive(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -4970,13 +4970,13 @@ send(msg.chat_id_, msg.id_,'• اهلا بك عزيزي ❗️\n• لايمك�
 end
 return false
 end
-ComdNew = text:match("^اضف صلاحيه (.*)$")
+ComdNew = text:match("^اضف صلاحية (.*)$")
 database:set(bot_id.."source:Comd:New:rt"..msg.chat_id_..msg.sender_user_id_,ComdNew)  
 database:sadd(bot_id.."source:Coomds"..msg.chat_id_,ComdNew)  
 database:setex(bot_id.."source:Comd:New"..msg.chat_id_..""..msg.sender_user_id_,200,true)  
-send(msg.chat_id_, msg.id_, "• 🇸🇦 ارسل نوع الصلاحيه ⌔\n• 🇸🇦 (عضو ~ مميز  ~ ادمن  ~ مدير )") 
+send(msg.chat_id_, msg.id_, "• 🇸🇦 ارسل نوع الصلاحية ⌔\n• 🇸🇦 (عضو ~ مميز  ~ ادمن  ~ مدير )") 
 end
-if text and text:match("^مسح صلاحيه (.*)$") and Addictive(msg) or text and text:match("^حذف صلاحيه (.*)$") and Addictive(msg) then 
+if text and text:match("^مسح صلاحية (.*)$") and Addictive(msg) or text and text:match("^حذف صلاحية (.*)$") and Addictive(msg) then 
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -4986,9 +4986,9 @@ send(msg.chat_id_, msg.id_,'• اهلا بك عزيزي ❗️\n• لايمك�
 end
 return false
 end
-ComdNew = text:match("^مسح صلاحيه (.*)$") or text:match("^حذف صلاحيه (.*)$")
+ComdNew = text:match("^مسح صلاحية (.*)$") or text:match("^حذف صلاحية (.*)$")
 database:del(bot_id.."source:Comd:New:rt:bot:"..ComdNew..msg.chat_id_)
-send(msg.chat_id_, msg.id_, "• 🇸🇦 تم مـسح الصلاحيه ") 
+send(msg.chat_id_, msg.id_, "• 🇸🇦 تم مـسح الصلاحية ") 
 end
 if database:get(bot_id.."source:Comd:New"..msg.chat_id_..""..msg.sender_user_id_) then 
 if text and text:match("^الغاء$") then 
@@ -4998,19 +4998,19 @@ return false
 end 
 if text == "مدير" then
 if not Constructor(msg) then
-send(msg.chat_id_, msg.id_"• 🇸🇦 ارسل نوع الصلاحيه مره اخر\n• 🇸🇦 تستطيع اضافة صلاحيه (عضو ~ مميز  ~ ادمن )") 
+send(msg.chat_id_, msg.id_"• 🇸🇦 ارسل نوع الصلاحية مره اخر\n• 🇸🇦 تستطيع اضافة صلاحية (عضو ~ مميز  ~ ادمن )") 
 return false
 end
 end
 if text == "ادمن" then
 if not Owner(msg) then 
-send(msg.chat_id_, msg.id_"• 🇸🇦 ارسل نوع الصلاحيه مره اخر\n• 🇸🇦 تستطيع اضافة صلاحيه ( عضو ~ مميز )") 
+send(msg.chat_id_, msg.id_"• 🇸🇦 ارسل نوع الصلاحية مره اخر\n• 🇸🇦 تستطيع اضافة صلاحية ( عضو ~ مميز )") 
 return false
 end
 end
 if text == "مميز" then
 if not Addictive(msg) then
-send(msg.chat_id_, msg.id_"• 🇸🇦 ارسل نوع الصلاحيه مره اخر\n• 🇸🇦 تستطيع اضافة صلاحيه ( عضو )") 
+send(msg.chat_id_, msg.id_"• 🇸🇦 ارسل نوع الصلاحية مره اخر\n• 🇸🇦 تستطيع اضافة صلاحية ( عضو )") 
 return false
 end
 end
@@ -7694,7 +7694,7 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendmessage?chat_id=' .. msg.sender_user_id_ .. '&text=' .. URL.escape(sender))
 end
 ------------------------------------------------------------------------
-if text == "غنيلي" then
+if text == "غنيلي11" then
 data,res = https.request('https://forhassan.ml/Black/audios.php')
 if res == 200 then
 audios = json:decode(data)
@@ -8094,8 +8094,8 @@ Text = [[
 • 🇸🇦 تثبيت / الغاء التثبيت
 
 • 🇸🇦 الصلاحيات
-• 🇸🇦 اضف صلاحيه + اسم الصلاحيه
-• 🇸🇦 مسح صلاحيه + اسم الصلاحيه
+• 🇸🇦 اضف صلاحية + اسم الصلاحية
+• 🇸🇦 مسح صلاحية + اسم الصلاحية
 
 • 🇸🇦 ضع تكرار + العدد
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
