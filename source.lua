@@ -615,7 +615,7 @@ end
 end
 if database:get(bot_id.."source:source:Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
 if text == "الغاء" or text == "الغاء الامر ✖️" then   
-send(msg.chat_id_, msg.id_,"• 🇸🇦 تم الغاء الاذاعه") 
+send(msg.chat_id_, msg.id_,"• 🇸🇦 تم الغاء الاذاعة") 
 database:del(bot_id.."source:source:Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
 end 
@@ -646,7 +646,7 @@ sendSticker(v, 0, msg.content_.sticker_.sticker_.persistent_id_)
 database:set(bot_id..'source:Msg:Pin:Chat'..v,msg.content_.sticker_.sticker_.persistent_id_) 
 end 
 end
-send(msg.chat_id_, msg.id_,"• 🇸🇦 تمت الاذاعه الى *~ "..#list.." ~* مجموعة ")     
+send(msg.chat_id_, msg.id_,"• 🇸🇦 تمت الاذاعة الى *~ "..#list.." ~* مجموعة ")     
 database:del(bot_id.."source:source:Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
 end
@@ -1160,7 +1160,7 @@ end
 
 if database:get(bot_id.."source:source:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
 if text == "الغاء" or text == "الغاء الامر ✖️" then   
-send(msg.chat_id_, msg.id_,"• 🇸🇦 تم الغاء الاذاعه للخاص") 
+send(msg.chat_id_, msg.id_,"• 🇸🇦 تم الغاء الاذاعة للخاص") 
 database:del(bot_id.."source:source:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
 end 
@@ -1187,14 +1187,14 @@ for k,v in pairs(list) do
 sendSticker(v, 0, msg.content_.sticker_.sticker_.persistent_id_)   
 end 
 end
-send(msg.chat_id_, msg.id_,"• 🇸🇦 تمت الاذاعه الى *~ "..#list.." ~* مشترك في الخاص ")     
+send(msg.chat_id_, msg.id_,"• 🇸🇦 تمت الاذاعة الى *~ "..#list.." ~* مشترك في الخاص ")     
 database:del(bot_id.."source:source:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
 end
 
 if database:get(bot_id.."source:source:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
 if text == "الغاء" or text == "الغاء الامر ✖️" then   
-send(msg.chat_id_, msg.id_,"• 🇸🇦 تم الغاء الاذاعه") 
+send(msg.chat_id_, msg.id_,"• 🇸🇦 تم الغاء الاذاعة") 
 database:del(bot_id.."source:source:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
 end 
@@ -1221,14 +1221,14 @@ for k,v in pairs(list) do
 sendSticker(v, 0, msg.content_.sticker_.sticker_.persistent_id_)   
 end 
 end
-send(msg.chat_id_, msg.id_,"• 🇸🇦 تمت الاذاعه الى *~ "..#list.." ~* مجموعة ")     
+send(msg.chat_id_, msg.id_,"• 🇸🇦 تمت الاذاعة الى *~ "..#list.." ~* مجموعة ")     
 database:del(bot_id.."source:source:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false
 end
 
 if database:get(bot_id.."source:source:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
 if text == "الغاء" or text == "الغاء الامر ✖️" then   
-send(msg.chat_id_, msg.id_,"• 🇸🇦 تم الغاء الاذاعه") 
+send(msg.chat_id_, msg.id_,"• 🇸🇦 تم الغاء الاذاعة") 
 database:del(bot_id.."source:source:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false  
 end 
@@ -1242,14 +1242,14 @@ message_ids_ = {[0] = msg.id_},
 disable_notification_ = 0,
 from_background_ = 1},function(a,t) end,nil) 
 end   
-send(msg.chat_id_, msg.id_,"• 🇸🇦 تمت الاذاعه الى *~ "..#list.." ~* مجموعة ")     
+send(msg.chat_id_, msg.id_,"• 🇸🇦 تمت الاذاعة الى *~ "..#list.." ~* مجموعة ")     
 database:del(bot_id.."source:source:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 end 
 return false
 end
 if database:get(bot_id.."source:source:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) then 
 if text == "الغاء" or text == "الغاء الامر ✖️" then   
-send(msg.chat_id_, msg.id_,"• 🇸🇦 تم الغاء الاذاعه") 
+send(msg.chat_id_, msg.id_,"• 🇸🇦 تم الغاء الاذاعة") 
 database:del(bot_id.."source:source:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 return false  
 end 
@@ -1263,7 +1263,7 @@ message_ids_ = {[0] = msg.id_},
 disable_notification_ = 0,
 from_background_ = 1},function(a,t) end,nil) 
 end   
-send(msg.chat_id_, msg.id_,"• 🇸🇦 تمت الاذاعه الى *~ "..#list.." ~* مشترك في الخاص ")     
+send(msg.chat_id_, msg.id_,"• 🇸🇦 تمت الاذاعة الى *~ "..#list.." ~* مشترك في الخاص ")     
 database:del(bot_id.."source:source:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_) 
 end 
 return false
@@ -6039,45 +6039,45 @@ send(msg.chat_id_, msg.id_,"• 🇸🇦  تم الغاء الحظر عن *~ "..
 end    
 tdcli_function({ID="GetChannelMembers",channel_id_ = msg.chat_id_:gsub("-100",""),filter_ = {ID = "ChannelMembersKicked"},offset_ = 0,limit_ = 200}, delbans, {chat_id_ = msg.chat_id_, msg_id_ = msg.id_})    
 end
-if text=="اذاعه خاص" and msg.reply_to_message_id_ == 0 and DevBot(msg) then 
+if text=="اذاعة خاص" and msg.reply_to_message_id_ == 0 and DevBot(msg) then 
 if database:get(bot_id.."source:Status:Bc") and not Devsource(msg) then 
-send(msg.chat_id_, msg.id_,"• 🇸🇦 الاذاعه معطله من قبل المطور الاساسي")
+send(msg.chat_id_, msg.id_,"• 🇸🇦 الاذاعة معطله من قبل المطور الاساسي")
 return false
 end
 database:setex(bot_id.."source:source:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_,"• 🇸🇦 ارسل لي سواء ~ { ملصق, متحركة, صورة, رسالة }\n• 🇸🇦 للخروج ارسل الغاء ") 
 return false
 end 
-if text=="اذاعه" and msg.reply_to_message_id_ == 0 and DevBot(msg) then 
+if text=="اذاعة" and msg.reply_to_message_id_ == 0 and DevBot(msg) then 
 if database:get(bot_id.."source:Status:Bc") and not Devsource(msg) then 
-send(msg.chat_id_, msg.id_,"• 🇸🇦 الاذاعه معطله من قبل المطور الاساسي")
+send(msg.chat_id_, msg.id_,"• 🇸🇦 الاذاعة معطله من قبل المطور الاساسي")
 return false
 end
 database:setex(bot_id.."source:source:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_,"• 🇸🇦 ارسل لي سواء ~ { ملصق, متحركة, صورة, رسالة }\n• 🇸🇦 للخروج ارسل الغاء ") 
 return false
 end  
-if text=="اذاعه بالتثبيت" and msg.reply_to_message_id_ == 0 and DevBot(msg) then 
+if text=="اذاعة بالتثبيت" and msg.reply_to_message_id_ == 0 and DevBot(msg) then 
 if database:get(bot_id.."source:Status:Bc") and not Devsource(msg) then 
-send(msg.chat_id_, msg.id_,"• 🇸🇦 الاذاعه معطله من قبل المطور الاساسي")
+send(msg.chat_id_, msg.id_,"• 🇸🇦 الاذاعة معطله من قبل المطور الاساسي")
 return false
 end
 database:setex(bot_id.."source:source:Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_,"• 🇸🇦 ارسل لي سواء ~ { ملصق, متحركة, صورة, رسالة }\n• 🇸🇦 للخروج ارسل الغاء ") 
 return false
 end  
-if text=="اذاعه بالتوجيه" and msg.reply_to_message_id_ == 0  and DevBot(msg) then 
+if text=="اذاعة بالتوجيه" and msg.reply_to_message_id_ == 0  and DevBot(msg) then 
 if database:get(bot_id.."source:Status:Bc") and not Devsource(msg) then 
-send(msg.chat_id_, msg.id_,"• 🇸🇦 الاذاعه معطله من قبل المطور الاساسي")
+send(msg.chat_id_, msg.id_,"• 🇸🇦 الاذاعة معطله من قبل المطور الاساسي")
 return false
 end
 database:setex(bot_id.."source:source:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_,"• 🇸🇦 ارسل لي التوجيه الان") 
 return false
 end 
-if text=="اذاعه بالتوجيه خاص" and msg.reply_to_message_id_ == 0  and DevBot(msg) then 
+if text=="اذاعة بالتوجيه خاص" and msg.reply_to_message_id_ == 0  and DevBot(msg) then 
 if database:get(bot_id.."source:Status:Bc") and not Devsource(msg) then 
-send(msg.chat_id_, msg.id_,"• 🇸🇦 الاذاعه معطله من قبل المطور الاساسي")
+send(msg.chat_id_, msg.id_,"• 🇸🇦 الاذاعة معطله من قبل المطور الاساسي")
 return false
 end
 database:setex(bot_id.."source:source:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
@@ -6085,14 +6085,14 @@ send(msg.chat_id_, msg.id_,"• 🇸🇦 ارسل لي التوجيه الان")
 return false
 end 
 
-if text == "تفعيل الاذاعه" and Devsource(msg) then  
+if text == "تفعيل الاذاعة" and Devsource(msg) then  
 database:del(bot_id.."source:Status:Bc") 
-send(msg.chat_id_, msg.id_,"\n• 🇸🇦 تم تفعيل الاذاعه " ) 
+send(msg.chat_id_, msg.id_,"\n• 🇸🇦 تم تفعيل الاذاعة " ) 
 return false
 end 
-if text == "تعطيل الاذاعه" and Devsource(msg) then  
+if text == "تعطيل الاذاعة" and Devsource(msg) then  
 database:set(bot_id.."source:Status:Bc",true) 
-send(msg.chat_id_, msg.id_,"\n• 🇸🇦 تم تعطيل الاذاعه") 
+send(msg.chat_id_, msg.id_,"\n• 🇸🇦 تم تعطيل الاذاعة") 
 return false
 end 
 
@@ -8273,9 +8273,9 @@ Text = [[
 • 🇸🇦 تفعيل البوت الخدمي 
 • 🇸🇦 تعطيل البوت الخدمي
 
-• 🇸🇦 تعطيل الاذاعه 
-• 🇸🇦 تفعيل الاذاعه 
-• 🇸🇦 تعطيل الاذاعه
+• 🇸🇦 تعطيل الاذاعة 
+• 🇸🇦 تفعيل الاذاعة 
+• 🇸🇦 تعطيل الاذاعة
 • 🇸🇦 تفعيل المغادرة
 
 • 🇸🇦 الملفات
@@ -8284,10 +8284,10 @@ Text = [[
 • 🇸🇦 تعطيل ملف + اسم الملف
 • 🇸🇦 مسح جميع الملفات 
 
-• 🇸🇦 اذاعه 
-• 🇸🇦 اذاعه خاص 
-• 🇸🇦 اذاعه بالتوجيه
-• 🇸🇦 اذاعه بالتثبيت 
+• 🇸🇦 اذاعة 
+• 🇸🇦 اذاعة خاص 
+• 🇸🇦 اذاعة بالتوجيه
+• 🇸🇦 اذاعة بالتثبيت 
 
 • 🇸🇦  حظر عام
 • 🇸🇦  الغاء العام
@@ -8511,9 +8511,9 @@ local keyboard = {
 {'تنظيف القروبات 📇','تنظيف المشتركين 🔂'},
 {'تفعيل البوت الخدمي ♨️','تعطيل البوت الخدمي ✖️'},
 {'ضع اسم للبوت 🚺'},
-{'اذاعه خاص 📧','المطورين 🛡️','اذاعة عام 📬'},
-{'اذاعه بالتوجيه 🔀','اذاعة خاص بالتوجيه 📥'},
-{'تفعيل الاذاعه 📨','تعطيل الاذاعه 🚫'},
+{'اذاعة خاص 📧','المطورين 🛡️','اذاعة عام 📬'},
+{'اذاعة بالتوجيه 🔀','اذاعة خاص بالتوجيه 📥'},
+{'تفعيل الاذاعة 📨','تعطيل الاذاعة 🚫'},
 {'تفعيل المغادره 🔔','تعطيل المغادره ⚓'},
 {'مسح قائمة العام 📌','مسح المطورين 📋','قائمة العام ⛔'},
 {'حذف رسالة ستارت 🔗','تغير رسالة Start 📩'},
@@ -8689,9 +8689,9 @@ if text == 'تعطيل البوت الخدمي ✖️' then
 database:set(bot_id..'source:Free:Add:Bots',true) 
 send(msg.chat_id_, msg.id_,'\n• 🇸🇦 تم تعطيل البوت الخدمي') 
 end
-if text=="اذاعه خاص 📧" and msg.reply_to_message_id_ == 0 then
+if text=="اذاعة خاص 📧" and msg.reply_to_message_id_ == 0 then
 if database:get(bot_id.."source:Status:Bc") and not Devsource(msg) then 
-send(msg.chat_id_, msg.id_,"• 🇸🇦 الاذاعه معطله من قبل المطور الاساسي")
+send(msg.chat_id_, msg.id_,"• 🇸🇦 الاذاعة معطله من قبل المطور الاساسي")
 return false
 end
 database:setex(bot_id.."source:source:Bc:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
@@ -8700,16 +8700,16 @@ return false
 end 
 if text=="اذاعة عام 📬" and msg.reply_to_message_id_ == 0 then
 if database:get(bot_id.."source:Status:Bc") and not Devsource(msg) then 
-send(msg.chat_id_, msg.id_,"• 🇸🇦 الاذاعه معطله من قبل المطور الاساسي")
+send(msg.chat_id_, msg.id_,"• 🇸🇦 الاذاعة معطله من قبل المطور الاساسي")
 return false
 end
 database:setex(bot_id.."source:source:Bc:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_,"• 🇸🇦 ارسل لي سواء ~ { ملصق, متحركة, صورة, رسالة }\n• 🇸🇦 للخروج ارسل الغاء ") 
 return false
 end  
-if text=="اذاعه بالتوجيه 🔀" and msg.reply_to_message_id_ == 0  then
+if text=="اذاعة بالتوجيه 🔀" and msg.reply_to_message_id_ == 0  then
 if database:get(bot_id.."source:Status:Bc") and not Devsource(msg) then 
-send(msg.chat_id_, msg.id_,"• 🇸🇦 الاذاعه معطله من قبل المطور الاساسي")
+send(msg.chat_id_, msg.id_,"• 🇸🇦 الاذاعة معطله من قبل المطور الاساسي")
 return false
 end
 database:setex(bot_id.."source:source:Fwd:Grops" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
@@ -8718,21 +8718,21 @@ return false
 end 
 if text=="اذاعة خاص بالتوجيه 📥" and msg.reply_to_message_id_ == 0  then
 if database:get(bot_id.."source:Status:Bc") and not Devsource(msg) then 
-send(msg.chat_id_, msg.id_,"• 🇸🇦 الاذاعه معطله من قبل المطور الاساسي")
+send(msg.chat_id_, msg.id_,"• 🇸🇦 الاذاعة معطله من قبل المطور الاساسي")
 return false
 end
 database:setex(bot_id.."source:source:Fwd:Pv" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_,"• 🇸🇦 ارسل لي التوجيه الان") 
 return false
 end 
-if text == "تفعيل الاذاعه 📨" then
+if text == "تفعيل الاذاعة 📨" then
 database:del(bot_id.."source:Status:Bc") 
-send(msg.chat_id_, msg.id_,"\n• 🇸🇦 تم تفعيل الاذاعه " ) 
+send(msg.chat_id_, msg.id_,"\n• 🇸🇦 تم تفعيل الاذاعة " ) 
 return false
 end 
-if text == "تعطيل الاذاعه 🚫" then
+if text == "تعطيل الاذاعة 🚫" then
 database:set(bot_id.."source:Status:Bc",true) 
-send(msg.chat_id_, msg.id_,"\n• 🇸🇦 تم تعطيل الاذاعه") 
+send(msg.chat_id_, msg.id_,"\n• 🇸🇦 تم تعطيل الاذاعة") 
 return false
 end 
 if text == "تفعيل المغادره 🔔" then
