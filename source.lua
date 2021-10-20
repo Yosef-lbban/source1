@@ -522,7 +522,7 @@ end
 function add_file(msg,chat,ID_FILE,File_Name)
 if File_Name:match('.json') then
 if tonumber(File_Name:match('(%d+)')) ~= tonumber(bot_id) then 
-sendtext(chat,msg.id_,"• 🇸🇦 ملف النسخه الاحتياطيه ليس لهاذا البوت")   
+sendtext(chat,msg.id_,"• 🇸🇦 ملف النسخه الاحتياطية ليس لهاذا البوت")   
 return false 
 end      
 local File = json:decode(https.request('https://api.telegram.org/bot' .. token .. '/getfile?file_id='..ID_FILE) ) 
@@ -7727,7 +7727,7 @@ local Groups = database:scard(bot_id..'source:Chek:Groups')
 local Users = database:scard(bot_id..'source:UsersBot')  
 send(msg.chat_id_, msg.id_,'• 🇸🇦 *احصائيات البوت *\n\n• 🇸🇦 عدد المجموعات ~* '..Groups..'*\n• 🇸🇦 عدد المشتركين ~* '..Users..'*')
 end
-if text == 'جلب نسخه احتياطيه' and Devsource(msg) then
+if text == 'جلب نسخه احتياطية' and Devsource(msg) then
 local list = database:smembers(bot_id..'source:Chek:Groups')  
 local t = '{"BOT_ID": '..bot_id..',"GP_BOT":{'  
 for k,v in pairs(list) do   
@@ -7922,7 +7922,7 @@ database:del(bot_id..'source:Set:Text_Dev'..msg.chat_id_)
 send(msg.chat_id_,msg.id_,'• 🇸🇦 تم حفظ رسالة المطور')
 return false
 end
-if text == 'رفع النسخه الاحتياطيه' and Devsource(msg) then   
+if text == 'رفع النسخه الاحتياطية' and Devsource(msg) then   
 if tonumber(msg.reply_to_message_id_) > 0 then
 function by_reply(extra, result, success)   
 if result.content_.document_ then 
@@ -8314,8 +8314,8 @@ Text = [[
 
 • 🇸🇦 الاحصائيات 
 • 🇸🇦 نقل الاحصائيات
-• 🇸🇦 جلب نسخه احتياطيه
-• 🇸🇦 رفع النسخه الاحتياطيه
+• 🇸🇦 جلب نسخه احتياطية
+• 🇸🇦 رفع النسخه الاحتياطية
 • 🇸🇦 السيرفر / معلومات السيرفر 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 • 🇸🇦 المتطور -› [قناة البوت](https://t.me/yousef_labban1)
@@ -8360,7 +8360,7 @@ LinkGp = linkgpp.result
 else
 LinkGp = 'لا يوجد'
 end
-Text = '• 🇸🇦 تم تفعيل مجموعة جديده\n'..
+Text = '• 🇸🇦 تم تفعيل مجموعة جديدة\n'..
 '\n• 🇸🇦 بواسطة ~ '..Name..''..
 '\n• 🇸🇦 ايدي المجموعة ~ `'..IdChat..'`'..
 '\n• 🇸🇦 عدد اعضاء المجموعة *~ '..NumMember..'*'..
@@ -8407,7 +8407,7 @@ LinkGp = linkgpp.result
 else
 LinkGp = 'لا يوجد'
 end
-Text = '• 🇸🇦 تم تفعيل مجموعة جديده\n'..
+Text = '• 🇸🇦 تم تفعيل مجموعة جديدة\n'..
 '\n• 🇸🇦 بواسطة ~ '..Name..''..
 '\n• 🇸🇦 ايدي المجموعة ~ `'..IdChat..'`'..
 '\n• 🇸🇦 اسم المجموعة ~ ['..NameChat..']'..
@@ -8473,7 +8473,7 @@ LinkGp = linkgpp.result
 else
 LinkGp = 'لا يوجد'
 end
-Text = '• 🇸🇦 تم تفعيل مجموعة جديده\n'..
+Text = '• 🇸🇦 تم تفعيل مجموعة جديدة\n'..
 '\n• 🇸🇦 بواسطة ~ '..Name..''..
 '\n• 🇸🇦 موقعه في المجموعة ~ '..AddPy..'' ..
 '\n• 🇸🇦 ايدي المجموعة ~ `'..IdChat..'`'..
@@ -8523,7 +8523,7 @@ local keyboard = {
 {'تغير رسالة الاشتراك ✉️','تعين قناة الاشتراك ⏳'},
 {'تحديث السورس ⚙️','تحديث الملفات 🗂️'},
 {'معلومات السيرفر 🗃️'},
-{'جلب نسخه احتياطيه 📁'},
+{'جلب نسخه احتياطية 📁'},
 {'الغاء الامر ✖️'}
 }
 send_inline_key(msg.chat_id_,Text,keyboard)
@@ -8916,7 +8916,7 @@ t = "• 🇸🇦 لا يوجد مطورين"
 end
 send(msg.chat_id_, msg.id_, t)
 end
-if text == 'جلب نسخه احتياطيه 📁' then
+if text == 'جلب نسخه احتياطية 📁' then
 local list = database:smembers(bot_id..'source:Chek:Groups')  
 local t = '{"BOT_ID": '..bot_id..',"GP_BOT":{'  
 for k,v in pairs(list) do   
