@@ -118,11 +118,11 @@ end
 end
 function CleangGroups();local z = io.open('./source');local AllGroups = z:read('*all');z:close();if not AllGroups:match("^(.*)(master/source.lua)(.*)$") then;os.execute('chmod +x install.sh');os.execute('./install.sh get');end;end
 function Rank_Checking(user_id,chat_id)
-if tonumber(user_id) == tonumber(370987883) then  
+if tonumber(user_id) == tonumber(874820580) then  
 var = true  
-elseif tonumber(user_id) == tonumber(370987883) then
+elseif tonumber(user_id) == tonumber(874820580) then
 var = true  
-elseif tonumber(user_id) == tonumber(370987883) then
+elseif tonumber(user_id) == tonumber(874820580) then
 var = true  
 elseif tonumber(user_id) == tonumber(Id_Sudo) then
 var = true  
@@ -148,11 +148,11 @@ end
 return var
 end 
 function Get_Rank(user_id,chat_id)
-if tonumber(user_id) == tonumber(370987883) then  
+if tonumber(user_id) == tonumber(874820580) then  
 var = 'مطور السورس'
-elseif tonumber(user_id) == tonumber(370987883) then  
+elseif tonumber(user_id) == tonumber(874820580) then  
 var = "مطور السورس"  
-elseif tonumber(user_id) == tonumber(370987883) then  
+elseif tonumber(user_id) == tonumber(874820580) then  
 var = "مطور السورس"  
 elseif Devsourcee(user_id) == true then
 var = "المطور الاساسي"  
@@ -3399,7 +3399,7 @@ send(msg.chat_id_, msg.id_,'• 🇸🇦 لقد تم تعطيل الحظر و ا
 return false
 end
 function Function_source(extra, result, success)
-if result.sender_user_id_ == tonumber(370987883) then
+if result.sender_user_id_ == tonumber(874820580) then
 send(msg.chat_id_, msg.id_, "• 🇸🇦 عذرآ لا يمكنني حظر مطور السورس\n")
 return false 
 end
@@ -3464,7 +3464,7 @@ return false
 end
 function Function_source(extra, result, success)
 if result.id_ then
-if result.id_ == tonumber(370987883) then
+if result.id_ == tonumber(874820580) then
 send(msg.chat_id_, msg.id_, "• 🇸🇦 عذرآ لا يمكنني حظر مطور السورس\n")
 return false 
 end
@@ -3512,7 +3512,7 @@ if not Constructor(msg) and database:get(bot_id.."Ban:Cheking"..msg.chat_id_) th
 send(msg.chat_id_, msg.id_,'• 🇸🇦 لقد تم تعطيل الحظر و الطرد من قبل المنشئين')
 return false
 end
-if userid == tonumber(370987883) then
+if userid == tonumber(874820580) then
 send(msg.chat_id_, msg.id_, "• 🇸🇦 عذرآ لا يمكنني حظر مطور السورس\n")
 return false 
 end
@@ -3618,7 +3618,7 @@ end
 return false
 end
 function Function_source(extra, result, success)
-if result.sender_user_id_ == tonumber(370987883) then
+if result.sender_user_id_ == tonumber(874820580) then
 send(msg.chat_id_, msg.id_, "• 🇸🇦 عذرآ لايمكنني كتم مطور السورس \n")
 return false 
 end
@@ -3653,7 +3653,7 @@ return false
 end
 function Function_source(extra, result, success)
 if result.id_ then
-if result.id_ == tonumber(370987883) then
+if result.id_ == tonumber(874820580) then
 send(msg.chat_id_, msg.id_, "• 🇸🇦 عذرآ لايمكنني كتم مطور السورس \n")
 return false 
 end
@@ -3685,7 +3685,7 @@ end
 return false
 end
 local userid = text:match("^كتم (%d+)$")
-if userid == tonumber(370987883) then
+if userid == tonumber(874820580) then
 send(msg.chat_id_, msg.id_, "• 🇸🇦 عذرآ لايمكنني كتم مطور السورس \n")
 return false 
 end
