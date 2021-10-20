@@ -522,7 +522,7 @@ end
 function add_file(msg,chat,ID_FILE,File_Name)
 if File_Name:match('.json') then
 if tonumber(File_Name:match('(%d+)')) ~= tonumber(bot_id) then 
-sendtext(chat,msg.id_,"• 🇸🇦 ملف النسخه الاحتياطية ليس لهاذا البوت")   
+sendtext(chat,msg.id_,"• 🇸🇦 ملف النسخة الاحتياطية ليس لهاذا البوت")   
 return false 
 end      
 local File = json:decode(https.request('https://api.telegram.org/bot' .. token .. '/getfile?file_id='..ID_FILE) ) 
@@ -4693,7 +4693,7 @@ send(msg.chat_id_, msg.id_,"• 🇸🇦 لا توجد قوانين هنا")
 end    
 end
 
-if text == "الاوامر المضافه" and Constructor(msg) then
+if text == "الاوامر المضافة" and Constructor(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -4704,7 +4704,7 @@ end
 return false
 end
 local list = database:smembers(bot_id.."source:List:Cmd:Group:New"..msg.chat_id_.."")
-t = "• 🇸🇦 قائمة الاوامر المضافه  \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
+t = "• 🇸🇦 قائمة الاوامر المضافة  \n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ \n"
 for k,v in pairs(list) do
 Cmds = database:get(bot_id.."source:Set:Cmd:Group:New1"..msg.chat_id_..":"..v)
 if Cmds then 
@@ -4718,7 +4718,7 @@ t = "• 🇸🇦 لا توجد اوامر اضافيه"
 end
 send(msg.chat_id_, msg.id_,"["..t.."]")
 end
-if text == "حذف الاوامر المضافه" or text == "مسح الاوامر المضافه" then
+if text == "حذف الاوامر المضافة" or text == "مسح الاوامر المضافة" then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -4900,10 +4900,10 @@ return false
 end
 local list = database:smembers(bot_id.."source:Coomds"..msg.chat_id_)
 if #list == 0 then
-send(msg.chat_id_, msg.id_,"• 🇸🇦 لا توجد صلاحيات مضافه")
+send(msg.chat_id_, msg.id_,"• 🇸🇦 لا توجد صلاحيات مضافة")
 return false
 end
-t = "\n• 🇸🇦 قائمة الصلاحيات المضافه \n••┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉••\n"
+t = "\n• 🇸🇦 قائمة الصلاحيات المضافة \n••┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉••\n"
 for k,v in pairs(list) do
 var = database:get(bot_id.."source:Comd:New:rt:bot:"..v..msg.chat_id_)
 if var then
@@ -7421,12 +7421,12 @@ send(msg.chat_id_, msg.id_,Text)
 end
 if text == 'جهاتي' then
 local addmem = database:get(bot_id.."source:Add:Memp"..msg.chat_id_..":"..msg.sender_user_id_) or 0
-local Text = '• 🇸🇦 عدد جهاتك المضافه هنا *~ '..addmem..'*'
+local Text = '• 🇸🇦 عدد جهاتك المضافة هنا *~ '..addmem..'*'
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text == 'مسح جهاتي' then
 database:del(bot_id..'source:Add:Memp'..msg.chat_id_..':'..msg.sender_user_id_)
-local Text = '• 🇸🇦 تم مـسح جميع جهاتك المضافه '
+local Text = '• 🇸🇦 تم مـسح جميع جهاتك المضافة '
 send(msg.chat_id_, msg.id_,Text) 
 end
 if text == "مجوهراتي" then  
@@ -7665,7 +7665,7 @@ for k,v in pairs(zx.results) do
 i = i + 1
 t = t..i.."-  "..v.." \n"
 end
-send(msg.chat_id_, msg.id_, t..'*ꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ*\n*• 🇸🇦 اضغط على الاسم ليتم نسخه*\n*• 🇸🇦 تابع جديدنا : @wwwuw*')
+send(msg.chat_id_, msg.id_, t..'*ꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ*\n*• 🇸🇦 اضغط على الاسم ليتم نسخة*\n*• 🇸🇦 تابع جديدنا : @wwwuw*')
 end
 if text and text:match("^احسب (.*)$") and database:get(bot_id.."source:age_Bots"..msg.chat_id_) == "open" then
 local Textage = text:match("^احسب (.*)$")
@@ -7727,7 +7727,7 @@ local Groups = database:scard(bot_id..'source:Chek:Groups')
 local Users = database:scard(bot_id..'source:UsersBot')  
 send(msg.chat_id_, msg.id_,'• 🇸🇦 *احصائيات البوت *\n\n• 🇸🇦 عدد المجموعات ~* '..Groups..'*\n• 🇸🇦 عدد المشتركين ~* '..Users..'*')
 end
-if text == 'جلب نسخه احتياطية' and Devsource(msg) then
+if text == 'جلب نسخة احتياطية' and Devsource(msg) then
 local list = database:smembers(bot_id..'source:Chek:Groups')  
 local t = '{"BOT_ID": '..bot_id..',"GP_BOT":{'  
 for k,v in pairs(list) do   
@@ -7922,7 +7922,7 @@ database:del(bot_id..'source:Set:Text_Dev'..msg.chat_id_)
 send(msg.chat_id_,msg.id_,'• 🇸🇦 تم حفظ رسالة المطور')
 return false
 end
-if text == 'رفع النسخه الاحتياطية' and Devsource(msg) then   
+if text == 'رفع النسخة الاحتياطية' and Devsource(msg) then   
 if tonumber(msg.reply_to_message_id_) > 0 then
 function by_reply(extra, result, success)   
 if result.content_.document_ then 
@@ -8244,10 +8244,10 @@ Text = [[
 • 🇸🇦  تفعيل/تعطيل الحظر
 • 🇸🇦  تفعيل/تعطيل الرفع
 
-• 🇸🇦  الاوامر المضافه
+• 🇸🇦  الاوامر المضافة
 • 🇸🇦 تعين / مسح الايدي
 • 🇸🇦  اضف امر / حذف امر
-• 🇸🇦  حذف / مسح الاوامر المضافه
+• 🇸🇦  حذف / مسح الاوامر المضافة
 
 • 🇸🇦 رفع/تنزيل منظف 
 • 🇸🇦 قفل فتح التعديل
@@ -8314,8 +8314,8 @@ Text = [[
 
 • 🇸🇦 الاحصائيات 
 • 🇸🇦 نقل الاحصائيات
-• 🇸🇦 جلب نسخه احتياطية
-• 🇸🇦 رفع النسخه الاحتياطية
+• 🇸🇦 جلب نسخة احتياطية
+• 🇸🇦 رفع النسخة الاحتياطية
 • 🇸🇦 السيرفر / معلومات السيرفر 
 ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉
 • 🇸🇦 المتطور -› [قناة البوت](https://t.me/yousef_labban1)
@@ -8523,7 +8523,7 @@ local keyboard = {
 {'تغير رسالة الاشتراك ✉️','تعين قناة الاشتراك ⏳'},
 {'تحديث السورس ⚙️','تحديث الملفات 🗂️'},
 {'معلومات السيرفر 🗃️'},
-{'جلب نسخه احتياطية 📁'},
+{'جلب نسخة احتياطية 📁'},
 {'الغاء الامر ✖️'}
 }
 send_inline_key(msg.chat_id_,Text,keyboard)
@@ -8916,7 +8916,7 @@ t = "• 🇸🇦 لا يوجد مطورين"
 end
 send(msg.chat_id_, msg.id_, t)
 end
-if text == 'جلب نسخه احتياطية 📁' then
+if text == 'جلب نسخة احتياطية 📁' then
 local list = database:smembers(bot_id..'source:Chek:Groups')  
 local t = '{"BOT_ID": '..bot_id..',"GP_BOT":{'  
 for k,v in pairs(list) do   
