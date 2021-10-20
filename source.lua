@@ -2097,27 +2097,27 @@ database:del(bot_id.."source:Lock:Contact"..msg.chat_id_)
 Reply_Status(msg,msg.sender_user_id_,"unlock","⌔ ⍒ تم فـتح الجهات")  
 return false
 end 
-if text == "قفل الكلايش" and Addictive(msg) then
+if text == "قفل المنشورات" and Addictive(msg) then
 database:set(bot_id.."source:Lock:Spam"..msg.chat_id_,"del")  
-Reply_Status(msg,msg.sender_user_id_,"lock","⌔ ⍒ تم قفـل الكلايش")  
+Reply_Status(msg,msg.sender_user_id_,"lock","⌔ ⍒ تم قفـل المنشورات")  
 return false
 end 
-if text == "قفل الكلايش بالتقيد" and Addictive(msg) then
+if text == "قفل المنشورات بالتقيد" and Addictive(msg) then
 database:set(bot_id.."source:Lock:Spam"..msg.chat_id_,"ked")  
-Reply_Status(msg,msg.sender_user_id_,"lockkid","⌔ ⍒ تم قفـل الكلايش")  
+Reply_Status(msg,msg.sender_user_id_,"lockkid","⌔ ⍒ تم قفـل المنشورات")  
 return false
 end 
-if text == "قفل الكلايش بالكتم" and Addictive(msg) then
+if text == "قفل المنشورات بالكتم" and Addictive(msg) then
 database:set(bot_id.."source:Lock:Spam"..msg.chat_id_,"ktm")  
-Reply_Status(msg,msg.sender_user_id_,"lockktm","⌔ ⍒ تم قفـل الكلايش")  
+Reply_Status(msg,msg.sender_user_id_,"lockktm","⌔ ⍒ تم قفـل المنشورات")  
 return false
 end 
-if text == "قفل الكلايش بالطرد" and Addictive(msg) then
+if text == "قفل المنشورات بالطرد" and Addictive(msg) then
 database:set(bot_id.."source:Lock:Spam"..msg.chat_id_,"kick")  
-Reply_Status(msg,msg.sender_user_id_,"lockkick","⌔ ⍒ تم قفـل الكلايش")  
+Reply_Status(msg,msg.sender_user_id_,"lockkick","⌔ ⍒ تم قفـل المنشورات")  
 return false
 end 
-if text == "فتح الكلايش" and Addictive(msg) then  
+if text == "فتح المنشورات" and Addictive(msg) then  
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -2128,7 +2128,7 @@ end
 return false
 end
 database:del(bot_id.."source:Lock:Spam"..msg.chat_id_)  
-Reply_Status(msg,msg.sender_user_id_,"unlock","⌔ ⍒ تم فـتح الكلايش")  
+Reply_Status(msg,msg.sender_user_id_,"unlock","⌔ ⍒ تم فـتح المنشورات")  
 return false
 end 
 if text == "قفل الانلاين" and Addictive(msg) then
@@ -6402,7 +6402,7 @@ local text =
 "\n".."⌔ ⍒ الماركدون ›› "..lock_mark..
 "\n".."⌔ ⍒ التعديل ›› "..lock_edit..
 "\n┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ "..
-"\n".."⌔ ⍒ الكلايش ›› "..lock_spam..
+"\n".."⌔ ⍒ المنشورات ›› "..lock_spam..
 "\n".."⌔ ⍒ الكيبورد ›› "..lock_inlin..
 "\n".."⌔ ⍒ الاغاني ›› "..lock_vico..
 "\n".."⌔ ⍒ المتحركه ›› "..lock_gif..
@@ -8045,7 +8045,7 @@ Text = [[
 ⌔ ⍒ الماركداون
 ⌔ ⍒ البوتات
 ⌔ ⍒ التكرار
-⌔ ⍒ الكلايش
+⌔ ⍒ المنشورات
 ⌔ ⍒ السيلفي
 ••┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉•• 
 ⌔ ⍒ المتطور -› [ألبوت ألاسلامي](https://t.me/yousef_labban1)
