@@ -3400,7 +3400,7 @@ return false
 end
 function Function_source(extra, result, success)
 if result.sender_user_id_ == tonumber(874820580) then
-send(msg.chat_id_, msg.id_, "• 🇸🇦 عذرآ لا يمكنني حظر مطور السورس\n")
+send(msg.chat_id_, msg.id_, "• 🇸🇦 يا مجنون لا يمكنني حظر مطور السورس\n")
 return false 
 end
 if Rank_Checking(result.sender_user_id_, msg.chat_id_) == true then
@@ -3465,7 +3465,7 @@ end
 function Function_source(extra, result, success)
 if result.id_ then
 if result.id_ == tonumber(874820580) then
-send(msg.chat_id_, msg.id_, "• 🇸🇦 عذرآ لا يمكنني حظر مطور السورس\n")
+send(msg.chat_id_, msg.id_, "• 🇸🇦 يا مجنون لا يمكنني حظر مطور السورس\n")
 return false 
 end
 if Rank_Checking(result.id_, msg.chat_id_) == true then
@@ -3513,7 +3513,7 @@ send(msg.chat_id_, msg.id_,'• 🇸🇦 لقد تم تعطيل الحظر و ا
 return false
 end
 if userid == tonumber(874820580) then
-send(msg.chat_id_, msg.id_, "• 🇸🇦 عذرآ لا يمكنني حظر مطور السورس\n")
+send(msg.chat_id_, msg.id_, "• 🇸🇦 يا مجنون لا يمكنني حظر مطور السورس\n")
 return false 
 end
 if Rank_Checking(userid, msg.chat_id_) == true then
