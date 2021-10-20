@@ -7409,12 +7409,12 @@ database:del(bot_id..'source:messageUser'..msg.chat_id_..':'..msg.sender_user_id
 local Text = '• 🇸🇦 تم مـسح جميع رسائلك '
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'سحكاتي' or text == 'تعديلاتي' then
+if text == 'تعديلاتي' or text == 'تعديلاتي' then
 local edit = database:get(bot_id..'source:message_edit'..msg.chat_id_..msg.sender_user_id_) or 0
 local Text = '• 🇸🇦 عدد التعديلات هنا *~ '..edit..'*'
 send(msg.chat_id_, msg.id_,Text) 
 end
-if text == 'مسح سحكاتي' or text == 'مسح تعديلاتي' then
+if text == 'مسح تعديلاتي' or text == 'مسح تعديلاتي' then
 database:del(bot_id..'source:message_edit'..msg.chat_id_..':'..msg.sender_user_id_)
 local Text = '• 🇸🇦 تم مـسح جميع تعديلاتك '
 send(msg.chat_id_, msg.id_,Text) 
@@ -8123,7 +8123,7 @@ Text = [[
 ??️┇ الترحيب
 • 🇸🇦  ايدي
 • 🇸🇦  جهاتي
-• 🇸🇦  سحكاتي
+• 🇸🇦  تعديلاتي
 • 🇸🇦  رسائلي
 • 🇸🇦  كشف البوتات
 
